@@ -16,7 +16,7 @@ contract MyNFT is ERC721URIStorage {
         uint256 newItemId = _tokenIds.current();
         _mint(recipient, newItemId);
 
-        // Укажи здесь CID твоего metadata.json
+    
         _setTokenURI(newItemId, "ipfs://bafybeiezrubbhs6hgjtaeu25pquyqbrhry6wc4mmbtxpl32bwpnccmxidq");
 
         return newItemId;
